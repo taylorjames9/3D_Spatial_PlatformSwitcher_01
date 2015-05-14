@@ -11,6 +11,9 @@ public class ColorSwitcher_Parent : MonoBehaviour {
 		public MyColor myColor;
 		
 		public virtual void Start(){
+
+		myColor = Random.value < 0.5 ? MyColor.Red : MyColor.Green;
+
 		switch(myColor){
 		case MyColor.Green:
 			GameManager.IncTotalGreen();
@@ -25,7 +28,7 @@ public class ColorSwitcher_Parent : MonoBehaviour {
 		}
 		
 		public virtual void OnTriggerEnter(Collider other){
-			
+			GameManager.IncTotalTurns();
 		}
 		
 		public void ChangeColor_mat(Color my_colr){

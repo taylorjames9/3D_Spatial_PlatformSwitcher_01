@@ -13,13 +13,12 @@ public class Self_Changer : ColorSwitcher_Parent {
 
 	public override void Start(){
 		base.Start();
-		//myColor = MyColor.Red;
-		//myCurrColor = redColor;
 		ChangeColor_mat(myCurrColor);
 
 	}
 
 	public override void OnTriggerEnter(Collider other){
+		base.OnTriggerEnter(other);
 		switch(myColor){
 		case MyColor.Red:
 			ChangeColor_mat(greenColor);

@@ -13,13 +13,11 @@ public class Opposite_Last : ColorSwitcher_Parent {
 		
 		public override void Start(){
 			base.Start();
-			//myColor = MyColor.Red;
-			//myCurrColor = redColor;
 			ChangeColor_mat(myCurrColor);
-			
 		}
 		
 		public override void OnTriggerEnter(Collider person){
+		base.OnTriggerEnter(person);
 			switch(person.GetComponent<Collider_Memory>().myLastColor){
 			case MyColor.Red:
 				if(myColor == MyColor.Red){

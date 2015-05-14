@@ -18,13 +18,12 @@ public class OppositeAll : ColorSwitcher_Parent {
 	public override void Start ()
 	{
 		base.Start();
-		//myColor = MyColor.Green;
-		//myCurrColor = greenColor;
 		ChangeColor_mat(myCurrColor);
 	}
 
 	public override void OnTriggerEnter (Collider other)
 	{
+		base.OnTriggerEnter(other);
 		Opposite_Event();
 
 	}
