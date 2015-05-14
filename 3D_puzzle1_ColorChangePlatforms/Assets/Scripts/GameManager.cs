@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour {
 		greenCounterText.text = totalNumGreen.ToString();
 		if(totalNumGreen >= 3){
 			objectivePlusWinState.text = "You Win!";
+		} else{
+			objectivePlusWinState.text = "Turn All Platforms to Green";
+
 		}
 	}
 

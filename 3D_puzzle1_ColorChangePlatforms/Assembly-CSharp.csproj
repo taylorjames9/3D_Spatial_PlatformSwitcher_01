@@ -715,7 +715,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="PlayMaker">
- <HintPath>/Users/taylorjames9/3D_puzzle1_ColorChangePlatforms/Assets/PlayMaker/PlayMaker.dll</HintPath>
+ <HintPath>/Users/taylorjames9/3D_Spatial_PlatformSwitcher_01/3D_puzzle1_ColorChangePlatforms/Assets/PlayMaker/PlayMaker.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
